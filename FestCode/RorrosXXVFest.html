@@ -4,41 +4,51 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title class="text-center"><h2>Rorro's XXV Fest</h2></title>
-    <body>
-        <div class="text-center">
-            <p id="timer"></p>
-            <script>
-                // Set the date we're counting down to
-                var countDownDate = new Date("Sep 3, 2022 18:00:00").getTime();
-                
-                // Update the count down every 1 second
-                var x = setInterval(function() {
-                    
-                    // Get today's date and time
-                    var now = new Date().getTime();
-                    
-                    // Find the distance between now and the count down date
-                    var distance = countDownDate - now;
-                    
-                    // Time calculations for days, hours, minutes and seconds
-                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                    
-                    // Display the result in the element with id="demo"
-                    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-                    + minutes + "m " + seconds + "s ";
-                    
-                    // If the count down is finished, write some text 
-                    if (distance < 0) {
-                        clearInterval(x);
-                        document.getElementById("demo").innerHTML = "EXPIRED";
-                    }
-                }, 1000);
-            </script>
-            <h4>More info Soon</h4>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="info-container col-md-3" style=" border-radius:20px; height:500px; ">
+                <h1 class="text-dark text-center" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Rorro's XXV Fest</h1>
+                <body>
+                    <div class="text-center" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+                        <p id="timer"></p>
+                        <script>
+                            // Set the date we're counting down to
+                            var countDownDate = new Date("Sep 3, 2022 18:00:00").getTime();
+                            
+                            // Update the count down every 1 second
+                            var x = setInterval(function() {
+                                
+                                // Get today's date and time
+                                var now = new Date().getTime();
+                                
+                                // Find the distance between now and the count down date
+                                var distance = countDownDate - now;
+                                
+                                // Time calculations for days, hours, minutes and seconds
+                                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                                
+                                // Display the result in the element with id="demo"
+                                
+                                document.getElementById("timer").innerHTML = days + "Days " + hours + "Hrs "
+                                + minutes + "Min " + seconds + "Sec ";
+                                
+                                // If the count down is finished, write some text 
+                                if (distance < 0) {
+                                    clearInterval(x);
+                                    document.getElementById("timer").innerHTML = "Happening Now!!";
+                                }
+                            }, 1000);
+                        </script>
+                        <h4>More info Soon</h4>
+                        <div class="alert alert-success text-center" role="alert">
+                            Verification Completed
+                        </div>
+                    </div>
+                </body>
+            </div>
         </div>
-    </body>
+    </div>
 </html>
