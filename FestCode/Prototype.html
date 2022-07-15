@@ -1,0 +1,117 @@
+
+//URL: https://rodlmag.github.io/RorrosXXVFest/FestCode/RorrosXXVFest.html
+
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <body style="background-color: rgb(40, 40, 40) ;">
+        <div class="container">
+            <div class="row align-items-center vh-100">
+                <div class="col-10 mx-auto">
+                    <div class="card container-fluid">
+                        <div class="tools">
+                            <div class="circle">
+                                <span class="red box"></span>
+                            </div>
+                            <div class="circle">
+                                <span class="yellow box"></span>
+                            </div>
+                            <div class="circle">
+                                <span class="green box"></span>
+                            </div>
+                        </div>
+                        <div class="card__content" style="font-size:12px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                            <h5 class="text-center">Invitación Personal</h5>
+                                <!-- <svg class="container-fluid" style="padding-top: opx;" viewBox="0 0 0 100">
+                                    <symbol id="s-text">
+                                        <div class="col-md-12 text-center">
+                                            <h3 class="animate-charcter">XXV</h3>
+                                        </div>
+                                    </symbol>
+                                </svg> -->
+                            <svg class="container-fluid" viewBox="0 0 960 300">
+                                <symbol id="s-text">
+                                  <text text-anchor="middle" x="50%" y="80%">Event ID </text>
+                                  <!-- <text text-anchor="middle" x="50%" y="80%">Rorro's XXV Fest</text> -->
+                                  
+                                </symbol>
+                              
+                                <g class = "g-ants">
+                                  <use xlink:href="#s-text" class="text-copy"></use>
+                                  <use xlink:href="#s-text" class="text-copy"></use>
+                                  <use xlink:href="#s-text" class="text-copy"></use>
+                                  <use xlink:href="#s-text" class="text-copy"></use>
+                                  <use xlink:href="#s-text" class="text-copy"></use>
+                                </g>
+                              </svg>
+                            <br>
+                            <div class="text-center" style="font-size:20px ;">
+                                <!-- <img src="https://pixabay.com/images/id-1293238/" alt="W3Schools.com"> -->
+                                <p id="timer"></p>
+                            <script>
+                                // Set the date we're counting down to
+                                var countDownDate = new Date("Oct 17, 2022 18:00:00").getTime();
+                                
+                                // Update the count down every 1 second
+                                var x = setInterval(function() {
+                                    
+                                    // Get today's date and time
+                                    var now = new Date().getTime();
+                                    
+                                    // Find the distance between now and the count down date
+                                    var distance = countDownDate - now;
+                                    
+                                    // Time calculations for days, hours, minutes and seconds
+                                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                                    
+                                    // Display the result in the element with id="demo"
+                                    
+                                    document.getElementById("timer").innerHTML = days + "Days " + hours + "Hrs "
+                                    + minutes + "Min " + seconds + "Sec ";
+                                    
+                                    // If the count down is finished, write some text 
+                                    if (distance < 0) {
+                                        clearInterval(x);
+                                        document.getElementById("timer").innerHTML = "Happening Now!!";
+                                    }
+                                }, 1000);
+                            </script>
+                            </div>
+                            Descripción:<br> An event description is a text or copy that tells audiences all the essential details about your event. 
+                            These details should come together so that it compels potential attendees to register. But more than driving up attendance,
+                             a good event description can pique the interest of non-members and even the press.
+                            <br><br>
+
+                            <!-- Por este medio me perminto el placer de invitarte a mi festejo de cumpleaños nº 25,
+                            espero que me puedas acompañar con la mejor actitud. El lugar contará con excelente ambiente
+                            y como siempre se sabe, la mejor musica con dj especial invitado. -->
+
+                            Fecha:<br>
+                            17 de Octubre. <br><br>
+
+                            Ubicación:<br> 
+                            <div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236566.34536955412!2d-101.
+                                09615547326402!3d22.112659827155298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa2
+                                0005acfb79%3A0xed2ee29afe18257!2sSan%20Luis%2C%20S.L.P.!5e0!3m2!1ses!2smx!4v1657840282447!5m2!1ses!2smx" 
+                                width="200px" 
+                                height="auto" 
+                                style="border-radius: 10px; border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <br>
+                            <div class="alert alert-success text-center" role="alert">
+                                Verificación Completada
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
